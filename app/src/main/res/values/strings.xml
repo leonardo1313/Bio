@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Bio</string>
+    <string name="name_textView">The name goes here</string>
+</resources>

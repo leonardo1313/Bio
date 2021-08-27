@@ -7,4 +7,14 @@
         <item name="android:textStyle">bold</item>
         <item name="android:padding">8dp</item>
     </style>
+
+    <style name="hobbies_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:autofillHints">hiking, guitar, coding...</item>
+        <item name="android:ems">10</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:inputType">textPersonName</item>
+        <item name="android:textSize">14sp</item>
+    </style>
 </resources>

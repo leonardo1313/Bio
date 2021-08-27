@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+
+<androidx.appcompat.widget.LinearLayoutCompat
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#091C7C"
+    android:background="#7C0909"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/description_imageView"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
@@ -24,15 +29,47 @@
         android:text="@string/name_textView"
         style="@style/name_text_style" />
 
+    <EditText
+        android:id="@+id/hobbies_editText"
+        style="@style/hobbies_style"
+        android:hint="@string/hobbies_hintTextView"
+        android:importantForAutofill="no"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/material_on_primary_emphasis_medium" />
+
+    <Button
+        android:id="@+id/saveHobbies_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#FFCA28"
+        android:elevation="12dp"
+        android:text="@string/saveHobbies_button"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/hobbies_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/bio_textView"
+            android:padding="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:lineSpacingMultiplier="1.4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="@string/bio_text" />
     </ScrollView>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
+    </layout>

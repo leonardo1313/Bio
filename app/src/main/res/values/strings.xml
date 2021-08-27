@@ -5,4 +5,5 @@
     <string name="description_imageView">running, coding, hiking…</string>
     <string name="hobbies_hintTextView">Add your hobbies</string>
     <string name="saveHobbies_button">Save</string>
+    <string name="hobbies_example">various hobbies</string>
 </resources>
